@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import "./Card.css";
 import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { setTrail } from "../../actions"
+import { setTrail, setLoading } from "../../actions"
 import { postToFavorites } from "../../utilis/apiCalls";
 
 function Card(props) {
@@ -14,11 +14,14 @@ function Card(props) {
   const dispatch = useDispatch()
 
   const selectTrail = (id) => {
+    dispatch(setLoading)
     return fetch('http://localhost:3000/api/v1/trail?id=' + id, {
     })
       .then(response => response.json())
       .then(data => dispatch(setTrail(data)))
+      .then(() => dispatch(setLoading))
       .catch(err => console.log(err))
+  }
   const currentUser = useSelector((state) => state.selectedUser);
   const trails = useSelector((state) => state.trails);
 
