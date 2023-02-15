@@ -1,5 +1,5 @@
 export const getUserSavedTrails = async (id) => {
-  const url = `http://localhost:3000/api/v1/user?id=${id}`;
+  const url = `https://murmuring-cliffs-65490.herokuapp.com/api/v1/user?id=${id}`;
   const response = await fetch(url);
   if (response.status < 200 && response.status > 299) {
     throw response;

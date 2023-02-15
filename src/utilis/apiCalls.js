@@ -5,7 +5,7 @@ export const getData = (url) => {
       .catch(err => console.log(err))
   }
   export const postToFavorites = (newTrail, userId) => {
-    return fetch("http://localhost:3000/api/v1/user-trails", {
+    return fetch("https://murmuring-cliffs-65490.herokuapp.com/api/v1/user-trails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -19,7 +19,7 @@ export const getData = (url) => {
   }
 
   export const deleteFromFavorites = (trailId, userId) => {
-    return fetch("http://localhost:3000/api/v1/user-trails", {
+    return fetch("https://murmuring-cliffs-65490.herokuapp.com/api/v1/user-trails", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"

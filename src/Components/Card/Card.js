@@ -14,7 +14,7 @@ function Card(props) {
   const dispatch = useDispatch();
 
   const selectTrail = (id) => {
-    return fetch('http://localhost:3000/api/v1/trail?id=' + id, {
+    return fetch('https://murmuring-cliffs-65490.herokuapp.com/api/v1/trail?id=' + id, {
     })
       .then(response => response.json())
       .then(data => dispatch(setTrail(data)))
@@ -24,7 +24,7 @@ function Card(props) {
   const trails = useSelector((state) => state.trails);
 
   const getUser = (id) => {
-    return fetch('http://localhost:3000/api/v1/user?id=' + id, {
+    return fetch('https://murmuring-cliffs-65490.herokuapp.com/api/v1/user?id=' + id, {
     })
       .then(response => response.json())
       .then(data => dispatch(setUser(data)))

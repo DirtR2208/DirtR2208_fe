@@ -6,11 +6,11 @@ import { GITHUB_ROUTES } from '../../utilis/constants'
 function AboutUs() {
   return (
     <div className='about-us'>
-      <h2>About Us View</h2>
+      <h2>About Us</h2>
       <div className='about-us-container'>
         <div>
           <p className='bio-text'>
-          At Dirtr, our mission is to deliver a comprehensive and current resource for off-road trails throughout the greater Denver area. Time is precious and we will gather your trail intel so that you can get out there. Adventure awaits.
+          At Dirtr, our mission is to deliver a comprehensive and current resource for off-road trails throughout the great state of Colorado. Time is precious and we will gather your trail intel so that you can get out there. Adventure awaits.
           </p>
           <div className='team-container'>
             <h2>Our team</h2>

@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     Promise.all([
-      getData("http://localhost:3000/api/v1/users"),
+      getData("https://murmuring-cliffs-65490.herokuapp.com/api/v1/users"),
       getAllTrails(),
       getAllCounties(),
     ]).then(([usersData, trailsData, countiesData]) => {

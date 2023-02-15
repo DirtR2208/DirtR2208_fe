@@ -18,7 +18,7 @@ const userButtons = localUsers.map(user => {
 })
 
 const getUser = (id) => {
-  return fetch('http://localhost:3000/api/v1/user?id=' + id, {
+  return fetch('https://murmuring-cliffs-65490.herokuapp.com/api/v1/user?id=' + id, {
   })
     .then(response => response.json())
     .then(data => dispatch(setUser(data)))
