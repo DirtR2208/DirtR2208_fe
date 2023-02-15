@@ -10,6 +10,12 @@ export const logOut = () => {
   };
 };
 
+export const setLoading = () => {
+  return {
+    type: "TOGGLE",
+  };
+};
+
 export const saveAllTrails = (trails) => ({
   type: "SAVE_ALL_TRAILS",
   payload: trails,
