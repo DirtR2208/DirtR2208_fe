@@ -15,13 +15,11 @@ describe('Individual Trail Page User Flow', () => {
     })
 
     it('Should see trail name', () => {
-        cy.wait(1000)
         cy.get('.individual-trail-name').should('contain', 'Cowboy Lake')
     })
 
 
     it('Should see trail distance', () => {
-        cy.wait(1000)
         cy.get('.trail-distance').should('contain', 'Distance: 1.5 miles')
     })
 
@@ -48,7 +46,6 @@ describe('Individual Trail Page User Flow', () => {
     it('Should be able to favorite trail', () => {
         cy.get('.favorite-button').click()
         cy.get('.saved-page-button').click()
-        cy.wait(1000)
         cy.get('.card').should('have.length', 1)
     })
   })
