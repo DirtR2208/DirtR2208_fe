@@ -34,6 +34,10 @@
 ### Live App
 https://dirtr.netlify.app/
 
+or
+
+https://dirtr2208-fe.vercel.app/
+
 ## Sources
   - [MDN](http://developer.mozilla.org/en-US/)
   - [Codecademy](https://www.codecademy.com/learn/learn-redux)
