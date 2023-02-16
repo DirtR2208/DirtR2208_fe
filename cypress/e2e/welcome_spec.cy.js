@@ -10,7 +10,7 @@ describe('Welcome Page User Flow', () => {
     cy.intercept('https://murmuring-cliffs-65490.herokuapp.com/api/v1/user?id=3')
     cy.intercept('https://murmuring-cliffs-65490.herokuapp.com/api/v1/counties')
     cy.intercept('https://murmuring-cliffs-65490.herokuapp.com/api/v1/users')
-    cy.visit('http://localhost:3001/')
+    cy.visit('https://dirtr.netlify.app/')
     cy.get('.user-button').eq(2).click()
     cy.get('.enter-button').click()
   })
@@ -40,23 +40,23 @@ describe('Welcome Page User Flow', () => {
 
   it('Should be able to navigate to favorites page and back', () => {
     cy.get('.saved-page-button').click()
-    cy.url().should('eq', 'http://localhost:3001/saved_trails')
+    cy.url().should('include', '/saved_trails')
     cy.get('.title').click()
-    cy.url().should('eq', 'http://localhost:3001/home')
+    cy.url().should('include', '/home')
   })
 
   it('Should be able to navigate to about page and back', () => {
     cy.get('.about-button').click()
-    cy.url().should('eq', 'http://localhost:3001/about')
+    cy.url().should('include', '/about')
     cy.get('.title').click()
-    cy.url().should('eq', 'http://localhost:3001/home')
+    cy.url().should('include', '/home')
   })
 
   it('Should be able to navigate to all trails page and back', () => {
     cy.get('.button-welcome').click()
-    cy.url().should('eq', 'http://localhost:3001/trails')
+    cy.url().should('include', '/trails')
     cy.get('.title').click()
-    cy.url().should('eq', 'http://localhost:3001/home')
+    cy.url().should('include', '/home')
   })
 
 })

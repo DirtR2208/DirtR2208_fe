@@ -1,6 +1,6 @@
 describe('Login Page User Flow', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3001/')
+    cy.visit('https://dirtr.netlify.app/')
   })
 
   it('Should see Dirtr title', () => {

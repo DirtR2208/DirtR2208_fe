@@ -1,6 +1,6 @@
 describe('Individual Trail Page User Flow', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:3001/')
+      cy.visit('https://dirtr.netlify.app/')
       cy.get('.account-button-container').within(() => {
         cy.get('.user-button').eq(5).click()
       })
@@ -46,6 +46,6 @@ describe('Individual Trail Page User Flow', () => {
     it('Should be able to favorite trail', () => {
         cy.get('.favorite-button').click()
         cy.get('.saved-page-button').click()
-        cy.get('.card').should('have.length', 1)
+        cy.get('.trail-name').should('contain', 'Cowboy')
     })
   })
