@@ -1,6 +1,6 @@
 describe('Individual Trail Page User Flow', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:3001/')
+      cy.visit('http://localhost:3000/')
       cy.get('.account-button-container').within(() => {
         cy.get('.user-button').eq(5).click()
       })
