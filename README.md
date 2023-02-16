@@ -25,32 +25,14 @@
 ### Learning Goals
 - Work on a fullstack team
 - Learn from the Back End: what do they handle? What info do they need from us? What info do we need from them?
-- Independently learn and integrate Redux into the app
+- Independently learn and integrate Redux and CircleCI into the app
 
 
 ### Visual Demo
 
-(Visual Demo will go here when complete!)
-
-### Set Up
-1. Clone the repo
-   ```sh
-   git clone git@github.com:DirtR2208/dirtr2208_fe.git
-   ```
-2. Install NPM packages and start server
-   ```sh
-   npm install
-   npm start
-   ``` 
-3. Clone the API from the repo 
-   ```sh
-   git clone (????)
-   ```
-4. CD into the API directory and start the local server
-   ```sh
-   (?????)
-   ```
-5. Explore the website
+![Brief features gif](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzkwNDUyY2VjZThiYjY3M2Y3MDVkOGY0ODMwNGI0NTNmMGY5OTcyOCZjdD1n/3AcrClXJiZACTWMLko/giphy.gif)
+### Live App
+https://dirtr.netlify.app/
 
 ## Sources
   - [MDN](http://developer.mozilla.org/en-US/)
