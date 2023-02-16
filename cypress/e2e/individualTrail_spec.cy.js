@@ -15,11 +15,13 @@ describe('Individual Trail Page User Flow', () => {
     })
 
     it('Should see trail name', () => {
+        cy.wait(500)
         cy.get('.individual-trail-name').should('contain', 'Cowboy Lake')
     })
 
 
     it('Should see trail distance', () => {
+        cy.wait(500)
         cy.get('.trail-distance').should('contain', 'Distance: 1.5 miles')
     })
 
